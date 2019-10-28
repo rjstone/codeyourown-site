@@ -11,7 +11,8 @@
     <title>Code Your Own Web Site | Khan Academy Help</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
+            integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
 
     <style>
         .pageheader {
@@ -154,7 +155,8 @@
                 <a class="nav-link" href="#ka-processingjs">KA-JS Setup</a>
             </li>
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">What Next?</a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">What Next?</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#beginners">Novice</a>
                     <a class="dropdown-item" href="#intermediate">Intermediate</a>
@@ -164,34 +166,30 @@
                 </div>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="https://trello.com/b/3Xw6UOuj">Feedback</a>
-            </li>
-
-            <li class="nav-item active">
                 <div class="nav-link" style="color: #8f8;">External Links:</div>
             </li>
 
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                     aria-expanded="false">Tools</a>
                 <div class="dropdown-menu">
-                    <h6 class="dropdown-header">Code Sandboxes</h6>
-                    <a class="dropdown-item" href="https://thimble.mozilla.org/">Mozilla Thimble</a>
-                    <a class="dropdown-item" href="http://www.tutorialspoint.com/codingground.htm">Coding Ground</a>
-                    <a class="dropdown-item" href="https://c9.io/">Cloud9</a>
-                    <a class="dropdown-item" href="https://hyperdev.com/">HyperDev</a>
+                    <h6 class="dropdown-header">Code Playgrounds</h6>
+                    <a class="dropdown-item" href="https://glitch.com/">Glitch</a>
                     <a class="dropdown-item" href="http://codepen.io/">CodePen</a>
-                    <a class="dropdown-item" href="http://jsbin.com/">JSBin</a>
                     <a class="dropdown-item" href="https://jsfiddle.net/">JSFiddle</a>
+                    <a class="dropdown-item" href="https://c9.io/">Cloud9 (AWS)</a>
+                    <a class="dropdown-item" href="http://www.tutorialspoint.com/codingground.htm">Coding Ground</a>
+                    <a class="dropdown-item" href="http://jsbin.com/">JSBin</a>
                     <a class="dropdown-item" href="http://sqlfiddle.com/">SQLFiddle</a>
                     <div class="dropdown-divider"></div>
-                    <h6 class="dropdown-header">Regex Testers</h6>
+                    <h6 class="dropdown-header">Regex Playgrounds</h6>
+                    <a class="dropdown-item" href="https://regex101.com/">RegEx101</a>
                     <a class="dropdown-item" href="http://regexr.com/">RegExr</a>
                     <div class="dropdown-divider"></div>
                     <h6 class="dropdown-header">Color Schemers</h6>
                     <a class="dropdown-item" href="http://paletton.com/">Paletton</a>
-                    <a href="http://www.shutterstock.com/labs/spectrum/" class="dropdown-item">Spectrum</a>
                     <div class="dropdown-divider"></div>
-                    <h6 class="dropdown-header">Doc Browsers</h6>
+                    <h6 class="dropdown-header">Documentation</h6>
                     <a class="dropdown-item" href="http://devdocs.io/">devdocs.io</a>
                     <a class="dropdown-item" href="https://zealdocs.org/">Zeal</a>
                     <a class="dropdown-item" href="https://kapeli.com/dash">Dash</a>
@@ -223,7 +221,7 @@
 
         <h2>Introduction</h2>
 
-        <p>This page was created primarily for people who have learned HTML/CSS and possibly JavaScript+Processing.js on <a href="https://www.khanacademy.org/">Khan Academy</a>. Users there are constantly asking "how do I create my own web site?" Khan Academy provides a great "sandbox" for educational purposes, but it is not a web hosting provider.</p>
+        <p>This page was created primarily for people who have learned HTML/CSS and possibly JavaScript+Processing.js on <a href="https://www.khanacademy.org/">Khan Academy</a>. Users there are constantly asking "how do I create my own web site?" Khan Academy provides a great "playground" for educational purposes, but it is not a web hosting provider.</p>
 
         <p>This guide will explain how to use other services to create a web site that anyone on the Internet can browse. In fact, this page was originally set up using the exact instructions described here.</p>
 
@@ -236,10 +234,9 @@
         <ul>
             <li><a href="https://www.khanacademy.org/computing/computer-programming/programming">Intro to JS: Drawing &amp; Animation</a></li>
             <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css-js">HTML/JS: Making webpages interactive</a></li>
-            <li><a href="https://www.khanacademy.org/computing/computer-programming/html-js-jquery">HTML/JS: Making webpages interactive with jQuery</a></li>
         </ul>
 
-        <p>If you still just want to experiment and you want a less restrictive environment to do so, there's an excellent free service called <a href="https://thimble.mozilla.org/">Mozilla Thimble</a> that you can try. This provides you with an online editor, but your projects can consist of multiple files (including images) and you are less restricted in what you can do. It also provides you with a URL for each of your projects that allows them to be viewed as full-size web sites. The main problem with it is that <em>all projects are public on Thimble</em> and anyone can "remix" (spin off) your project. You also can't use your own domain name with it. While it's more powerful than the HTML editor on Khan Academy, it isn't a substitute for a regular web site.</p>
+        <p>If you still just want to experiment and you want a less restrictive environment to do so, there's an excellent free service called <a href="https://glitch.com/">Glitch</a> that you can try. This provides you with an online editor, but your projects can consist of multiple files (including images) and you are less restricted in what you can do.</p>
 
         <p>So if you've at least finished the <a href="https://www.khanacademy.org/computing/computer-programming/html-css">Intro to HTML/CSS</a> class on Khan Academy, keep reading.</p>
 
@@ -248,15 +245,13 @@
 
         <p>These instructions will describe how to set up a very simple web site using the cloud file storage service <a href="https://db.tt/JBhh3niM">Dropbox.com</a> and the web hosting service <a href="https://www.kissr.com/">KISSr</a>. Both are free for a basic level of service.</p>
 
-        <p>While the name "KISSr" sounds very strange for a web hosting service, the name would appear to be based on the acronym KISS which stands for "Keep It Simple, Stupid." The service does live up to its name in that it makes it very simple to host a web site, at least for anyone who knows a little bit of HTML and CSS.</p>
+        <p>Dropbox will give you 2GB of cloud storage for free, and KISSr will let you set up one site that allows limited page views per month for free. This is plenty to get started with.</p>
 
-        <p>Dropbox will give you 2GB of cloud storage for free, and KISSr will let you set up one site that provides 1,000 web requests per month for free. This is plenty to get started with.</p>
-
-        <div class="alert alert-info" role="alert"><strong>Disclaimer:</strong> A number of products and services are mentioned in this guide, though almost all of them are free. The author does not endorse, nor is he affiliated with, any of these products or services. Please do your own research and verification before providing things like personal information or spending any money. The author does not get paid by Khan Academy and this is not an official Khan Academy site.</div>
+        <div class="alert alert-info" role="alert"><strong>Disclaimer:</strong> A number of products and services are mentioned in this guide, though almost all of them are free. The author does not endorse, nor is he affiliated with, any of these products or services. Please do your own research and verification before providing things like personal information or spending any money. The author does not get paid by Khan Academy or any of these services and this is not an official Khan Academy site.</div>
 
 
         <h2 class="anchor" id="setup">Site Setup for HTML/CSS/JS</h2>
-        <p>Below are the instructions for setting up your static web site. A static web site is the simplest type of web site. There are no scripts or SQL databases running on the server, but it is sufficient for <a href="https://en.wikipedia.org/wiki/Front-end_web_development">front-end web development</a>. This means that <strong>SQL is not supported</strong> on this type of site.</p>
+        <p>Below are the instructions for setting up your static web site. A static web site is the simplest type of web site. There are no scripts or SQL databases running on the server, but it is sufficient for <a href="https://en.wikipedia.org/wiki/Front-end_web_development">front-end web development</a>. This means that <strong>SQL is not supported</strong> on this type of site. (<a href="https://glitch.com/">Glitch</a> actually does support a node.js backend including different databases. But this is a bit more complex to use.)</p>
 
         <p>Anything you have learned about HTML, CSS, and JavaScript will work in this environment. You can write JavaScript that will work in the browser of anyone visiting your site.</p>
 
@@ -267,7 +262,7 @@
     <div class="container step-reset">
 
         <h3 class="step">Create a Dropbox Account</h3>
-        <p>First, you will need a Dropbox account. This will provide network storage space for your web site, and you can use it for storing other files too. If you already have a Dropbox account, you can skip this part since you can use your existing Dropbox account with KISSr.</p>
+        <p>First, you will need a Dropbox account. This will provide network storage space for your web site, and you can use it for storing other files too. If you already have a Dropbox account, you can skip this part since you can use your existing Dropbox account with KISSt.</p>
         <ol>
             <li>Create an account on <a href="https://db.tt/JBhh3niM">Dropbox.com</a> - Please use <a href="https://db.tt/JBhh3niM">this link</a> to help the author of this guide. That way he will get referral credit which increases the storage limit on his own Dropbox account. (Thank you in advance for your help!)</li>
             <li>Install the <a href="https://db.tt/JBhh3niM">Dropbox Software</a> on your computer. The Dropbox software automatically syncs the Dropbox folder on your computer to your Dropbox account. This means you won't have to manually upload files.</li>
@@ -279,16 +274,15 @@
         </div>
 
         <h3 class="step">Log in to KISSr</h3>
-        <p>Log in to <a href="https://www.kissr.com/">KISSr</a> using your Dropbox account. This will not disclose your Dropbox password to KISSr.</p>
+        <p>First make sure you are already logged in to your <a href="https://db.tt/JBhh3niM">DropBox account</a>. Then, after logging in to dropbox via dropbox.com, go to <a href="https://www.kissr.com/">KISSr</a> and authorize it to link to your dropbox account. This will not disclose your Dropbox password to KISSr.</p>
 
-        <p>Create your subdomain of the form: <code>yoursitename.kissr.com</code> where <code>yoursitename</code> is replaced with a name you choose. Pick something good because you can't easily change it once you tell everyone about it.</p>
+        <p>Create your subdomain of the form: <code>yoursitename.kissr.com</code> where <code>yoursitename</code> is replaced with a name you choose. Pick something good because you can't easily change it once you tell people about it.</p>
 
         <h3 class="step">Download and Install a Code Editor</h3>
         <p>To edit the code for your site, you will need a text editor. Using a <strong>code editor</strong>, a type of text editor that is designed with HTML and other code editing in mind, is essential for making it easier to write code. Here are some options which range from easiest to more difficult. All of these are free.</p>
         <ul>
              <li><a href="http://brackets.io/">Brackets</a> is the easiest choice. It comes with many good features, such as a color picker, and good default settings for HTML, CSS, and JavaScript.</li>
-             <li><a href="https://atom.io/">Atom</a> has different features and is a little more complicated.</li>
-             <li><a href="https://code.visualstudio.com/">VS Code</a> is similar, but it is somewhat more advanced and more difficult to use.</li>
+             <li><a href="https://code.visualstudio.com/">VS Code</a> is similar, but it is somewhat more advanced and oriented toward programming in general.</li>
         </ul>
         <p>You can use any text editor, even Windows Notepad or OS X TextEdit, but the rest of this tutorial will assume you are using one of the code editors listed above. Your editor doesn't need any special file upload features because you're just going to edit your files locally and Dropbox Sync will automatically upload your changes to your Dropbox storage. Once uploaded to Dropbox, your files automatically become available to the web server.</p>
 
@@ -340,7 +334,7 @@
 
         <p>This is completely optional and it's the only thing here that costs money, but some domains are extremely cheap (less than US$1/year).</p>
 
-        <p>If you don't like the domain name <code>kissr.com</code> (most people wouldn't blame you) you can register your own domain name. <a href="https://www.namecheap.com/domains.aspx">NameCheap</a> will register some domains for less than US$1 per year, but the catch with them is that the price goes way up after a year. Fortunately domains can be transferred to a different registrar.</p>
+        <p>If you don't like the domain name <code>kissr.com</code> (most people wouldn't blame you) you can register your own domain name. <a href="https://www.namecheap.com/domains.aspx">NameCheap</a> will register some domains for less than US$1 per year, but the catch with them is that the price goes way up after a year. Fortunately most domains can be transferred to a different registrar.</p>
 
         <p>The best thing to do is check out <a href="http://www.registrarowl.com/report_registrar_price_comparison.php">Registrar Owl</a> for a massive price comparison list. Don't forget to take <a href="http://www.registrarowl.com/report_registrar_free_whois_privacy.php">Whois Privacy</a> into account because many registrars charge money to keep your name and address out of the whois database. (Thanks to <a href="http://ejohn.org/blog/low-cost-com-domains-with-whois-privacy/">John Resig</a> for pointing this out on his blog.)</p>
 
@@ -434,7 +428,7 @@
 
         <h2>Beginners</h2>
 
-        <p>For now you should focus on getting really confortable creating your own site with the static web server environment described above, especially if you are still in middle school, but eventually you may want to get more advanced. Here are some suggestions on what to do and learn next.</p>
+        <p>For now you should focus on getting really confortable creating your own site with the static web server environment described above, but eventually you may want to get more advanced. Here are some suggestions on what to do and learn next.</p>
 
         <h3>Learn More JavaScript</h3>
 
@@ -442,7 +436,6 @@
         <ul>
             <li><a href="https://www.khanacademy.org/computing/computer-programming/programming">Intro to JS: Drawing &amp; Animation</a></li>
             <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css-js">HTML/JS: Making webpages interactive</a></li>
-            <li><a href="https://www.khanacademy.org/computing/computer-programming/html-js-jquery">HTML/JS: Making webpages interactive with jQuery</a></li>
         </ul>
 
         <h3>Get Familiar With the Full HTML/CSS Documentation</h3>
@@ -464,79 +457,63 @@
 
         <p>KISSr limits your usage to 1,000 page views per month with the free account. While you can pay them $5/month to remove this restriction and gain the ability to create as many subdomains as you want, you might want to try using <a href="https://pages.github.com/">GitPages</a> which doesn't have the usage limitations.</p>
 
-        <p>GitPages is slightly harder to use because you will need to learn to use <a href="https://github.com/">Git</a> to upload your files.</p>
+        <p>GitPages is slightly harder to use because you will need to learn to use <a href="https://github.com/">Git</a> to upload your files. However, the text editors I mentioned come with Git extensions that will allow you to push updates from the text editor so it's easier to do once you set it up.</p>
 
-        <p>While you can just upload files to a Git project using your web browser, learning Git is worthwhile because this knowledge will come in very handy for the more advanced server hosting environments described below. At first, at least learn to use the GUI Git client provided by GitHub.</p>
+        <p>While you can just upload files to a Git project using your web browser, learning Git is worthwhile because this knowledge will come in very handy for the more advanced server hosting environments and for programming in general. At first, at least learn to use the GUI Git client provided by GitHub.</p>
 
         <p>GitPages has the limitation that you can only have one domain name per user and it has to be your username. Also, <strong>everything you upload there is public to the world unless you pay a subscription fee.</strong> So be warned about that. You can use your own domain name with GitPages.</p>
 
 
         <h2 class="anchor" id="intermediate">Intermediate Difficulty</h2>
 
-        <p>This is where things start to get more difficult, but you don't need to be a professional web developer yet.</p>
+        <p>This is where things start to get more difficult, but you don't need to be a professional web developer yet. You'll need to be rather familiar with HTML, CSS, and JaveScript.</p>
 
-        <p>Things at this level are recommended for people who are at least in high school.</p>
+        <p>From this point on, everything will be discussed in terms of of two categories: <strong>front end</strong> and <strong>back end</strong>. Here's what these terms mean:</p>
 
-        <p>From this point on, everything will be divided into one of two categories: <strong>front end</strong> and <strong>back end</strong>. Here's what these terms mean:</p>
         <ul>
-            <li><strong>Front End</strong> also called "client side" means that you are programming the user's browser. This includes HTML, CSS, DOM, and client-side (browser side) JavaScript. It also includes things like jQuery, Bootstrap, Processing.js, and any other library that works in the browser. So far everything you've done has been front end.</li>
-            <li><strong>Back End</strong> also called "server side" refers to programming the web server. This includes one or more of Node.js (server side JavaScript), PHP, python, ruby, databases (SQL or NoSQL), file server storage, and any frameworks like Express.js, Django, or Rails that have to run on the server. You may not have done any of this yet, but if you leared some SQL then you were learning about back end development.</li>
+            <li><strong>Front End</strong> &mdash; also called "client side" &mdash; means that you are programming the user's browser. This includes HTML, CSS, DOM, and client-side (browser side) JavaScript. It also includes things like jQuery, Bootstrap, Processing.js, and any other library that works in the browser. So far everything you've done has been front end.</li>
+            <li><strong>Back End</strong> &mdash; also called "server side" &mdash; refers to programming the web server. Code that runs on the web server can <em>render</em> HTML (which means a computer program generates the HTML instead of just sending an HTML file) or implement <em>web services</em> that allow client side JavaScript code to connect to databases to retrieve data or store it in a more permanent manner. In general, code that runs on the server can gain access to things that live on servers like databases, and can serve as a hub for communication between users such as chat rooms and message forums.</li>
         </ul>
-        <p>Any time you hear about something new, like Express.js, you should ask yourself "is this front end or back end stuff?" If something falls into the back end category then you need a server that will support it. Express.js is a back end framework.</p>
 
-        <p>Not all servers support everything. KISSr, for example, doesn't support any back end development at all. All it will do is send your files to the browser and any code will have to run in the browser. Other web hosting services may only support PHP and the MySQL database. Yet others might support almost anything if you know what you're doing.</p>
+        <p>Any time you hear about something new, like Express.js, you should ask yourself "is this front end or back end stuff?" If something falls into the back end category then you need a server that will support it. Express.js is a back end framework that runs on node.js (which is effectively a web server). Some things are frameworks with both front and back end parts to them, but it is more common to find frameworks for one or the other.</p>
+
+        <p>Not all hosting services support back end development. KISSr, for example, doesn't support any back end development at all. All it will do is send your files to the browser and any code will have to run in the browser. Other web hosting services may only support PHP and the MySQL database, but not node.js. Yet others might support almost anything if you know what you're doing.</p>
 
 
-        <h3>More Advanced Web Tutorial Communities</h3>
+        <h3>More Advanced Web Tutorials</h3>
 
-        <p>Before moving on, check out both of the following:</p>
+        <p>Before moving on, check out <a href="https://www.freecodecamp.com/">FreeCodeCamp</a>. You could almost just go to this site and forget about the rest of this page. They have almost everything you need to know including:</p>
         <ul>
-            <li><a href="https://www.freecodecamp.com/">FreeCodeCamp</a> - You could almost just go to this site and forget about the rest of this page. They have almost everything you need to get a job including:
-                <ul>
-                    <li><strong>Front End Development Certification:</strong> HTML5, CSS, JavaScript, Bootstrap, jQuery, Object Oriented and Functional Programming, JSON/Ajax, Algorithms</li>
-                    <li><strong>Data Visualization Certification:</strong> Sass, React, D3</li>
-                    <li><strong>Back End Development Certification:</strong> Testing/Debugging, Git, Node.js/Express.js, MongoDB</li>
-                    <li><strong>Full Stack Development Certification:</strong> Requires using what you learned above to complete real working projects for non-profit groups.</li>
-                    <li><strong>Challenges: </strong> Various other subjects, not all of which are available yet.</li>
-                </ul></li>
-            <li><a href="http://www.sololearn.com/">SoloLearn</a> - Here you can learn several languages including: HTML, CSS, SQL, JavaScript, PHP, Python, Java, C#, and C++. You might be thinking "I already know HTML, CSS, and JavaScript" but it might be worth taking their lessons anyway because they will be easy for you at this point, will provide a refresher, and you will probably learn some new things about them too. At least take a look so you know where some good lessons are should you decide to learn PHP or some other language later.</li>
+            <li><strong>Front End Development Certification:</strong> HTML5, CSS, JavaScript, Bootstrap, jQuery, Object Oriented and Functional Programming, JSON/Ajax, Algorithms</li>
+            <li><strong>Data Visualization Certification:</strong> Sass, React, D3</li>
+            <li><strong>Back End Development Certification:</strong> Testing/Debugging, Git, Node.js/Express.js, MongoDB</li>
+            <li><strong>Full Stack Development Certification:</strong> Requires using what you learned above to complete real working projects for non-profit groups.</li>
         </ul>
+        <p>But in case that seems like too much to bite off at the moment, I've provided some other suggestions below.</p>
 
 
         <h3>Learn Bootstrap</h3>
 
-        <p><a href="http://getbootstrap.com/">Bootstrap</a> is a HTML, CSS, and JavaScript <a href="https://en.wikipedia.org/wiki/Front-end_web_development">front-end</a> <a href="https://en.wikipedia.org/wiki/CSS_frameworks">framework</a> that improves layout across devices with different screen sizes and provides a large number of HTML/CSS components for you to use. This may sound complicated, but it makes it easy to create some very professional looking web pages. In fact, this page was created using Bootstrap 4.</p>
+        <p><a href="http://getbootstrap.com/">Bootstrap</a> is a HTML, CSS, and JavaScript <a href="https://en.wikipedia.org/wiki/Front-end_web_development">front-end</a> <a href="https://en.wikipedia.org/wiki/CSS_frameworks">UI framework</a> that improves layout across devices with different screen sizes (responsive design) and provides a large number of HTML/CSS components for you to use. This may sound complicated, but it makes it easy to create some very professional looking web pages. In fact, this page was created using Bootstrap 4.</p>
 
         <p>One of the biggest advantages of using Bootstrap is <a href="https://en.wikipedia.org/wiki/Responsive_web_design">responsive design</a> which means that anything created with it almost automatically looks good on everything from a mobile phone screen to a desktop web browser.</p>
 
-        <p>Bootstrap tutorials are available at <a href="http://www.w3schools.com/bootstrap/default.asp">w3schools.com</a> and <a href="http://www.tutorialspoint.com/bootstrap/">tutorialspoint</a>.</p>
+        <p>Bootstrap tutorials are available at <a href="http://www.w3schools.com/bootstrap/default.asp">w3schools.com</a>, <a href="http://www.tutorialspoint.com/bootstrap/">tutorialspoint</a>, and <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/">TutorialRepublic</a>.</p>
 
+        
+        <h3>Learn Vue</h3>
 
-        <h3>Learn Server-Side Scripting</h3>
+        <p>You may be able to create dynamic web pages with DOM methods or jQuery, but there's a better way! These days there are a nuber of frameworks for <em>reactive</em> HTML that will automatically update your page for you whenever you change a property in JavaScript. The top three frameworks that do this for you, among other things, are Angular, React, and Vue.</p>
 
-        <p>Learn server-side scripting with <a href="https://nodejs.org/">Node.js</a>, <a href="http://www.tutorialspoint.com/php7/index.htm">PHP</a>, or another server-side scripting language. Why? Because for many purposes you need to be able to write server-side code. This is especially true if you need to store information in a database.</p>
+        <p>But I recommend learning <strong><a href="https://vuejs.org/">Vue</a></strong> because it is simple, works well, and is easy to learn. There are also good learning materials for it online.</p>
 
-        <p>You can learn Node.js at <a href="http://www.tutorialspoint.com/nodejs/index.htm">tutorialspoint</a>.</p>
+        <p>Here's an excellent video about how it works:</p>
 
-        <p>There are other server-side scripting environments you can use that are based on python, ruby, and other languages.</p>
+        <p><div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/247494684" allowfullscreen></iframe>
+        </div></p>
 
-
-        <h3>Learn AngularJS</h3>
-
-        <p><a href="https://angularjs.org/">AngularJS</a> is a front-end web application framework. It saves you from having to write as much front-end JavaScript when creating web applications. Tutorials are available at <a href="https://www.codecademy.com/learn/learn-angularjs">CodeAcademy</a>, <a href="http://www.w3schools.com/angular/default.asp">w3schools</a>, and <a href="http://www.tutorialspoint.com/angularjs/">tutorialspoint</a>.</p>
-
-
-        <h3>Other Code Testing Sandboxes and Playgrounds</h3>
-
-        <p>Here are some sites where you can play around with JavaScript, Bootstrap, AngularJS and even experiment with server-side scripting using Node.js and Express.js:</p>
-        <ul>
-            <li><a href="http://c9.io">Cloud9</a> is the king of all of them. You can get a free account with a full in-browser IDE that allows you to create workspaces (containers) where you can do almost anything and use almost any language, even C++. This is a great place to practice if you want to learn something other than Node.js, PHP, or SQL.</li>
-            <li><a href="https://hyperdev.com/">HyperDev</a> supports <a href="https://nodejs.org/">Node.JS</a> and <a href="http://expressjs.com/">Express.js</a> for server side scripting! (Recommended)</li>
-            <li><a href="http://codepen.io/pen/">Codepen</a> is client-side only but supports Angular.JS, jQuery, and other JS libraries.</li>
-            <li><a href="http://jsbin.com">JSBin</a> is similar to Codepen in capability.</li>
-            <li><a href="https://jsfiddle.net/">JSFiddle</a> is similar to the previous two but has Processing.js as a library option. You can still use Processing.js with the others, there's just no shortcut for adding the script link for it.</li>
-            <li><a href="http://sqlfiddle.com/">SQLFiddle</a> for runnig SQL and sharing SQL that you need help with.</li>
-        </ul>
+        <p>If you're already hooked on the whole idea after watching that, then <a href="https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance">Watch the Intro Course Videos</a> and after you've done that move on to the <a href="https://vuejs.org/v2/guide/">Official Vue Guide</a>.</p>
 
 
         <h3>Learn SQL</h3>
@@ -550,36 +527,30 @@
         </ul>
         <p><a href="http://sqlfiddle.com/">SQLFiddle</a> can be used for sharing code you're having trouble with or testing things out without having to install database software.</p>
 
+        
+        <h3>More Advanced Code Testing Sandboxes and Playgrounds</h3>
 
-        <h3>Get a Free Cpanel and LAMP-Based Web Hosting Account</h3>
-
-        <p><a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a> stands for Linux, Apache, MySQL, and <a href="http://www.tutorialspoint.com/php7/index.htm">PHP</a>. Cpanel is a site management interface that is easier to use than a command line interface.</p>
-
-        <p>While PHP is a bit "old school" at this point (it was one of the first server-side scripting languages) it's one of the few languages commonly supported for scripting on free web hosting accounts.</p>
-
-        <p>This is the point where the <a href="https://www.khanacademy.org/computing/computer-programming/sql">Intro to SQL: Querying and managing data</a> lessons on Khan Academy become useful, because now you will be able to write back end code that uses a database server with SQL.</p>
-
-        <p>Here are two major web hosting providers that provide free accounts of this type:</p>
+        <p>Here are some sites where you can play around with JavaScript, Bootstrap, other front-end frameworks, and in some cases even experiment with server-side scripting using Node.js and Express.js:</p>
         <ul>
-            <li><a href="http://x10hosting.com">X10 Hosting</a></li>
-            <li><a href="http://000webhost.com">000Webhost.com</a></li>
+            <li><a href="https://glitch.com/">Glitch</a> supports <a href="https://nodejs.org/">Node.JS</a> and <a href="http://expressjs.com/">Express.js</a> for server side scripting! (Recommended)</li>
+            <li><a href="http://c9.io">Cloud9</a> is the king of online development tools. You can get a free account with a full in-browser IDE that allows you to create workspaces (containers) where you can do almost anything and use almost any language, even C++. This is a great place to practice if you want to learn something other than Node.js, PHP, or SQL.</li>
+            <li><a href="http://codepen.io/pen/">Codepen</a> is client-side only but supports a number of JS libraries.</li>
+            <li><a href="http://jsbin.com">JSBin</a> is similar to Codepen in capability.</li>
+            <li><a href="https://jsfiddle.net/">JSFiddle</a> is similar to the previous two but has Processing.js as a library option. You can still use Processing.js with the others, there's just no shortcut for adding the script link for it.</li>
+            <li><a href="http://sqlfiddle.com/">SQLFiddle</a> for runnig SQL and sharing SQL that you need help with.</li>
         </ul>
-        <p>There are plenty of others that you can find by searching around. All services of this type provide PHP scripting and SQL-based database servers. Files are typically uploaded using an FTP client or via your web browser. (Few have Git or ssh upload support.) The only major disadvantage is that usually the only server-side scripting language they support is PHP. You can <a href="http://www.tutorialspoint.com/php7/index.htm">learn PHP here at tutorialspoint</a>.</p>
 
-        <p>You can also use this type of free account to serve static HTML pages with no PHP or database usage. They may be a better alternative to using KISSr or GitPages.</p>
 
 
         <h2 class="anchor" id="advanced">Advanced Difficulty Level</h2>
 
         <p><strong>This section is very advanced, so be prepared to learn a lot of stuff if you want to do any of this.</strong></p>
 
-        <p>This section is recommended for adults or possibly some high school students who are hard-core computer geeks.</p>
-
         <p>Before continuing, you should learn how to use <strong>command line interfaces</strong> (CLIs), also called shells. Which one you use will depend on which operating systems you are using. Web servers most frequently use Linux, so you will need to learn that no matter what. Fortunately for Mac users, OS X uses essentially the same command line interface as Linux with a few minor differences. Windows is a little different since PowerShell is now the preferred CLI, but you can install <span class="code">bash</span> or another Unix/Linux style shell in Windows if you want.</p>
 
         <p>Here are some resources that will help:</p>
         <ul>
-            <li><a href="https://www.codecademy.com/learn/learn-the-command-line">Learn to use the shell command line</a> on CodeAcademy. This tutorial is interactive and will teach you to use Unix/Linux style command line shells, such as 'bash', even if you know nothing.</li>
+            <li><a href="https://www.codecademy.com/learn/learn-the-command-line">Learn to use the shell command line</a> on CodeAcademy. This tutorial is interactive and will teach you to use Unix/Linux style command line shells, such as 'bash', even if you know nothing yet.</li>
             <li>If you installed <a href="https://git-for-windows.github.io/">Git for Windows</a>, you already have a Linux-like shell called "Git Bash" that you can launch from the start menu. Just type "git bash" into the search box of the start menu. You don't have to be using Git to use the 'bash' shell. You can do anything with it, and it comes already configured for running git shell commands too. It recognizes the same sort of commands as 'bash' on Linux, but it doesn't allow you to run Linux software.</li>
             <li><a href="https://blog.udemy.com/powershell-tutorial/">A Beginner’s Introduction to Windows PowerShell</a> for those using Windows.</li>
             <li>If you have Windows 10 and have installed the Anniversary Update, you can actualy <a href="http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/">install Microsoft's Linux command line environment on Windows</a>. This will not only give you a Linux shell, but you can also run actual Linux command line software. It is a Linux emulator, but it doesn't use a virtual machine and doesn't come with support for graphical applications unless you use <code>apt-get</code> to install it.</li>
@@ -592,7 +563,7 @@
 
         <p>It is also possible to install Apache, PHP, python, ruby, and other languages with web application frameworks on your local computer for purposes of learning and testing.</p>
 
-        <p>If you haven't already then you probably want to install a database such as MySQL or PostgreSQL on your local computer. See above for links to some free database software.</p>
+        <p>If you haven't already then you may want to install a database such as MySQL or PostgreSQL on your local computer. See above for links to some free database software.</p>
 
 
         <h3>Get a Free Containerized Cloud Hosting Account at Heroku</h3>
@@ -644,19 +615,18 @@
         <ul>
             <li><a href="https://www.nativescript.org/">NativeScript</a> (free)</li>
             <li><a href="http://phonegap.com/">Adobe PhoneGap/Cordova</a> (free)</li>
-            <li><a href="http://www.appcelerator.com/">Appcelerator Titanium</a> (paid)</li>
         </ul>
         <p>Once you know how to use them you will be able to generate both Android, iOS, and even Windows Phone versions of your application with little or no additional work.</p>
 
 
         <h2>Conclusion</h2>
 
-        <p>If you've made it this far and managed to at least tinker with everything mentioned here then congratulations! But you're still not a professional web developer just yet. There's stil quite a bit to learn about things like user interaction, usability, software engineering practices, and application design. But hopefully all of this has at least gotten you started toward creating the next killer  application of some sort.</p>
+        <p>If you've made it this far and managed to at least tinker with many things mentioned here then congratulations! But you're still not a professional web developer just yet. There's stil quite a bit to learn about things like user interaction, usability, software engineering practices, and application design. But hopefully all of this has at least gotten you started toward creating the next killer application of some sort.</p>
 
     </div>
 
     <div class="container-fluid footer">
-        <p class="credits">Author: <a href="https://www.khanacademy.org/profile/KnowMoreStuff/">KnowMoreStuff</a>, the real life version of Oh Noes! the error buddy.</p>
+        <p class="credits">Author: <a href="https://www.khanacademy.org/profile/KnowMoreStuff/">KnowMoreStuff</a>.</p>
     </div>
 
 
