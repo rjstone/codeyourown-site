@@ -1,5 +1,7 @@
 name: "Code Your Own Site"
 title: "Code Your Own Site"
+url: http://radix.cc
+baseurl: /codeyourown-site
 pages:
   - url: index.html
   - url: site_setup.html
