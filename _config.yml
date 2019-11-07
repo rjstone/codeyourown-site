@@ -1,2 +1,10 @@
 name: "Code Your Own Site"
 title: "Code Your Own Site"
+pages:
+  - url: index.html
+  - url: site_setup.html
+  - url: kajs_setup.html
+  - url: novice.html
+  - url: intermediate.html
+  - url: advanced.html
+  - url: dm-frameworks.html
