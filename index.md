@@ -1,0 +1,39 @@
+---
+title: "Code Your Own Site: Home"
+subtitle: "Instructions to help Khan Academy students and others create a working public web site using what they've learned about HTML, CSS, and JavaScript."
+nextpage: site_setup.html
+nexttitle: "Site Setup"
+layout: default
+---
+
+<h2>Introduction</h2>
+
+<p>This page was created primarily for people who have learned HTML/CSS and possibly JavaScript+Processing.js on <a href="https://www.khanacademy.org/">Khan Academy</a>. Users there are constantly asking "how do I create my own web site?" Khan Academy provides a great "playground" for educational purposes, but it is not a web hosting provider.</p>
+
+<p>This guide will explain how to use other services to create a web site that anyone on the Internet can browse. In fact, this page was originally set up using the exact instructions described here.</p>
+
+
+<h2>What Should I Have Learned Before Proceeding?</h2>
+
+<p>You should have completed at least the <a href="https://www.khanacademy.org/computing/computer-programming/html-css">Intro to HTML/CSS: Making webpages</a> lessons on Khan Academy, or completed similar lessons elsewhere. This is the absolute minimum level of knowledge required.</p>
+
+<p>These <strong>optional</strong> lessons will also be useful to you, but it is not necessary to complete them before continuing here:</p>
+<ul>
+    <li><a href="https://www.khanacademy.org/computing/computer-programming/programming">Intro to JS: Drawing &amp; Animation</a></li>
+    <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css-js">HTML/JS: Making webpages interactive</a></li>
+</ul>
+
+<p>If you still just want to experiment and you want a less restrictive environment to do so, there's an excellent free service called <a href="https://glitch.com/">Glitch</a> that you can try. This provides you with an online editor, but your projects can consist of multiple files (including images) and you are less restricted in what you can do.</p>
+
+<p>So if you've at least finished the <a href="https://www.khanacademy.org/computing/computer-programming/html-css">Intro to HTML/CSS</a> class on Khan Academy, keep reading.</p>
+
+
+<h2>How does this work? How much does it cost?</h2>
+
+<p>These instructions will describe how to set up a very simple web site using the cloud file storage service <a href="https://db.tt/JBhh3niM">Dropbox.com</a> and the web hosting service <a href="https://www.kissr.com/">KISSr</a>. Both are free for a basic level of service.</p>
+
+<p>Dropbox will give you 2GB of cloud storage for free, and KISSr will let you set up one site that allows limited page views per month for free. This is plenty to get started with.</p>
+
+<div class="alert alert-info" role="alert"><strong>Disclaimer:</strong> A number of products and services are mentioned in this guide, though almost all of them are free. The author does not endorse, nor is he affiliated with, any of these products or services. Please do your own research and verification before providing things like personal information or spending any money. The author does not get paid by Khan Academy or any of these services and this is not an official Khan Academy site.</div>
+
+

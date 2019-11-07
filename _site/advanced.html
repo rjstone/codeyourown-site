@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Learn how to code your own web site and host it on free services. Good for Khan Academy users and other beginners.">
+    <meta name="author" content="Robert Stone">
+
+    <title>What to Do Next: Advanced | Code Your Own Site</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
+            integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link rel="stylesheet" href="site.css"> 
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top navbar-dark bg-success">
+        <a href="/index.html" class="navbar-brand">&#x1f3e0;</a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/site_setup.html">Site Setup</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/kajs_setup.html">KA-JS Setup</a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/novice.html" role="button" aria-haspopup="true"
+                    aria-expanded="false">What Next?</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/novice.html">Novice</a>
+                    <a class="dropdown-item" href="/intermediate.html">Intermediate</a>
+                    <a class="dropdown-item" href="/advanced.html">Advanced</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/dm-frameworks.html">Desktop/Mobile Apps</a>
+                </div>
+            </li>
+            <li class="nav-item active">
+                <div class="nav-link" style="color: #8f8;">External Links:</div>
+            </li>
+
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                     aria-expanded="false">Tools</a>
+                <div class="dropdown-menu">
+                    <h6 class="dropdown-header">Code Playgrounds</h6>
+                    <a class="dropdown-item" href="https://glitch.com/">Glitch</a>
+                    <a class="dropdown-item" href="http://codepen.io/">CodePen</a>
+                    <a class="dropdown-item" href="https://jsfiddle.net/">JSFiddle</a>
+                    <a class="dropdown-item" href="https://c9.io/">Cloud9 (AWS)</a>
+                    <a class="dropdown-item" href="http://www.tutorialspoint.com/codingground.htm">Coding Ground</a>
+                    <a class="dropdown-item" href="http://jsbin.com/">JSBin</a>
+                    <a class="dropdown-item" href="http://sqlfiddle.com/">SQLFiddle</a>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Regex Playgrounds</h6>
+                    <a class="dropdown-item" href="https://regex101.com/">RegEx101</a>
+                    <a class="dropdown-item" href="http://regexr.com/">RegExr</a>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Color Schemers</h6>
+                    <a class="dropdown-item" href="http://paletton.com/">Paletton</a>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Documentation</h6>
+                    <a class="dropdown-item" href="http://devdocs.io/">devdocs.io</a>
+                    <a class="dropdown-item" href="https://zealdocs.org/">Zeal</a>
+                    <a class="dropdown-item" href="https://kapeli.com/dash">Dash</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Learning</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="http://www.khanacademy.org">Khan Academy</a>
+                    <a href="https://www.freecodecamp.com/" class="dropdown-item">FreeCodeCamp</a>
+                    <a href="http://www.sololearn.com/" class="dropdown-item">SoloLearn</a>
+                    <a href="http://www.tutorialspoint.com/" class="dropdown-item">tutorialspoint</a>
+                    <a href="https://www.codecademy.com/" class="dropdown-item">CodeAcademy</a>
+                    <a href="http://programmr.com/" class="dropdown-item">Programmr</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid pageheader">
+        <div class="container">
+            <h1 class="display-3">What to Do Next: Advanced</h1>
+            <p class="lead">Learning both front and back end development plus some devops like command line interfaces and virtual servers.</p>
+        </div>
+    </div>
+
+    <div class="container">
+    <h2 class="anchor" id="advanced">Advanced Difficulty Level</h2>
+
+<p><strong>This section is very advanced, so be prepared to learn a lot of stuff if you want to do any of this.</strong></p>
+
+<p>Before continuing, you should learn how to use <strong>command line interfaces</strong> (CLIs), also called shells. Which one you use will depend on which operating systems you are using. Web servers most frequently use Linux, so you will need to learn that no matter what. Fortunately for Mac users, OS X uses essentially the same command line interface as Linux with a few minor differences. Windows is a little different since PowerShell is now the preferred CLI, but you can install <span class="code">bash</span> or another Unix/Linux style shell in Windows if you want.</p>
+
+<p>Here are some resources that will help:</p>
+<ul>
+    <li><a href="https://www.codecademy.com/learn/learn-the-command-line">Learn to use the shell command line</a> on CodeAcademy. This tutorial is interactive and will teach you to use Unix/Linux style command line shells, such as 'bash', even if you know nothing yet.</li>
+    <li>If you installed <a href="https://git-for-windows.github.io/">Git for Windows</a>, you already have a Linux-like shell called "Git Bash" that you can launch from the start menu. Just type "git bash" into the search box of the start menu. You don't have to be using Git to use the 'bash' shell. You can do anything with it, and it comes already configured for running git shell commands too. It recognizes the same sort of commands as 'bash' on Linux, but it doesn't allow you to run Linux software.</li>
+    <li><a href="https://blog.udemy.com/powershell-tutorial/">A Beginner’s Introduction to Windows PowerShell</a> for those using Windows.</li>
+    <li>If you have Windows 10 and have installed the Anniversary Update, you can actualy <a href="http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/">install Microsoft's Linux command line environment on Windows</a>. This will not only give you a Linux shell, but you can also run actual Linux command line software. It is a Linux emulator, but it doesn't use a virtual machine and doesn't come with support for graphical applications unless you use <code>apt-get</code> to install it.</li>
+</ul>
+
+<h3>Install Node.js and a Database Server on Your Desktop or Laptop</h3>
+
+<p>You can install <a href="https://nodejs.org/">Node.js</a> on your Windows, Mac, or Linux computer, run applications from the command line, and use your browser to view them. This is useful for developing and testing your code offline until you're ready to deploy (upload) it.</p>
+
+<p>It is also possible to install Apache, PHP, python, ruby, and other languages with web application frameworks on your local computer for purposes of learning and testing.</p>
+
+<p>If you haven't already then you may want to install a database such as MySQL or PostgreSQL on your local computer. See above for links to some free database software.</p>
+
+<h3>Get a Free Containerized Cloud Hosting Account at Heroku</h3>
+
+<p>Now that you know the CLI and know some things about both server-side scripting and databases, you might want to try out containerized <a href="https://en.wikipedia.org/wiki/Cloud_computing#Service_models">cloud computing</a> services. There is one that allows you to use Node.js and PostgreSQL for free called <a href="http://www.heroku.com/">Heroku</a> and what they give you for free is pretty impressive.</p>
+
+<p>You will need to know how to use the CLI on your local computer because it's pretty much impossible to use Heroku without the CLI, but they have excellent step-by-step tutorials on how to deploy and manage applications on their service. You will also need to <a href="https://www.codecademy.com/learn/learn-git">learn to use Git from the command line</a>.</p>
+
+<p>Heroku is a <strong>PaaS</strong> (Platform as a Service) type service which doesn't offer you true virtual machines like an <strong>IaaS</strong> (Infrastructure as a Service) type service. So don't expect to be able to upload your own virtual machine images.</p>
+
+<h3>Experiment With Local Virtual Servers</h3>
+
+<p>You can simulate an IaaS cloud hosting server on your local computer using free virtual machine software. This is helpful because it gets you used to using a virtual server the same way you would using a virtual server hosting service.</p>
+
+<p>Download <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> (Virtual Machine hypervisor) and run a <a href="https://bitnami.com/stack/mean/virtual-machine">virtual machine image</a> installed with <a href="http://meanjs.org/">MEAN.JS</a> for example. There are a lot of other <a href="https://bitnami.com/stacks">virtual machine images</a> that you can experiment with including LAMP images.</p>
+
+<p>Once you have a virtual machine running, you will want to treat it like it's running on an unknown rack mount server in some unknown location where you will never see it, because this is the situation with actual virtual machine hosting services. In other words, you want to treat your VM like a "headless" machine (one with no monitor or keyboard).</p>
+
+<p>To access and control your VM, you will <a href="http://www.makeuseof.com/tag/beginners-guide-setting-ssh-linux-testing-setup/">need to use ssh</a> which is a way to get a command line on remote computers and upload files. Hopefully your VM image has git installed on it already because the best practice for uploading changes to a site is to use git.</p>
+
+<h3>Virtual Web Server Hosting</h3>
+
+<p>These days most people are actually happy with CaaS (Container as a Service) and PaaS type services because they do almost everything one could want but are less trouble to deal with than full virtual machines. But, once you're familiar with virtual machine servers, you might want to create your own web site based on one and possibly run other types of servers on it such as game servers.</p>
+
+<p><strong>This is very advanced, so you will need to learn a lot about system administration and web devlopment before you can make good use of an environment like this. Get comfortable with running a virtual server on your own computer first.</strong> Here are some recommendations.</p>
+
+<p>A <a href="https://www.digitalocean.com/products/one-click-apps/lamp/">virtual server hosting account</a> running a <a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a> (Linux, Apache, MySQL, PHP) installation will do pretty much anything that one could want, but it isn't much different than the free LAMP-based web hosting accounts mentioned above. The main advantage is that you will have command line access and can do whatever you want with the virtual server.</p>
+
+<p>A <a href="https://www.digitalocean.com/products/one-click-apps/mean/">virtual server hosting account</a> running <a href="http://meanjs.org/">MEAN.JS</a> provides an environment with <a href="http://docs.mongodb.org/manual/">MongoDB</a> and <a href="http://expressjs.com/">Express.js</a> plus <a href="https://nodejs.org/">Node.JS</a> for server-side scripting. This is a little more sophisticated than the previous option but it entirely uses JavaScript so learning PHP isn't necessary. Learning the JavaScript frameworks (Express.js, Node.js, and Angular.js) is necessary though, and you can learn more about some of those on <a href="https://www.codecademy.com/learn">CodeAcademy</a>. You can experiment with Node.js and Express.js at <a href="https://hyperdev.com/">HyperDev</a>.</p>
+
+    </div>
+
+    <div class="container bottomnav">
+        
+    <a href="/intermediate.html">Back: What to Do Next: Intermediate</a>
+    
+     &mdash; 
+    
+    <a href="/dm-frameworks.html">Next: Native Desktop and Mobile Apps</a>
+    
+    </div>
+    
+    <div class="container-fluid footer">
+        <p class="credits">Author: <a href="https://www.khanacademy.org/profile/KnowMoreStuff/">rjstone (KnowMoreStuff)</a>.</p>
+    </div>
+
+
+    <!-- Run all the JavaScript stuff -->
+    <!-- Include the processing.js library -->
+    <!-- See https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for differences -->
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js" integrity="sha384-IFMQ3jsa1T5/PsytPaLGxwQ6Z0c2fEjduoYZoD9BWJBFcdGpqX+tqdMYIDGS8yWY" crossorigin="anonymous"></script>
+    <script>
+        var sketchProc = function(processingInstance) {
+            with(processingInstance) {
+                size(600, 600);
+                frameRate(30);
+
+                // ProgramCodeGoesHere
+
+                noStroke();
+
+                var paintSplat = function() {
+                    var rb = random(0, 250);
+                    var gb = random(0, 250);
+                    var bb = random(0, 250);
+
+                    for (var i = 0; i < 500; i++) {
+                        var x = randomGaussian() * 71;
+                        var y = randomGaussian() * 120;
+                        var d = dist(0, 0, x, y);
+                        var s = pow((width / 1.4 - d) / 22, 1.50);
+                        var r = randomGaussian() * d / 15 + rb;
+                        var g = randomGaussian() * d / 15 + gb;
+                        var b = randomGaussian() * d / 15 + bb;
+                        var c = color(r, g, b, 180);
+
+                        fill(c);
+                        ellipse(x, y, s, s);
+                    }
+                };
+
+                //translate(width/2,height/2);
+                //paintSplat();
+
+                mouseClicked = function() {
+                    noStroke();
+
+                    pushMatrix();
+                    translate(mouseX, mouseY);
+                    scale(0.7, 0.7);
+                    rotate(randomGaussian() * 157);
+                    paintSplat();
+                    popMatrix();
+                };
+
+                fill(0, 0, 0);
+                textSize(50);
+                textAlign(CENTER, CENTER);
+                text("Click mouse here to splatter!", 0, 0, width, height);
+
+            }
+        };
+
+        // Get the canvas that Processing-js will use
+        var canvas = document.getElementById("mycanvas");
+        // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+        var processingInstance = new Processing(canvas, sketchProc);
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-4313173-7', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+</body>
+</html>

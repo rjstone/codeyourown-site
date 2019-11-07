@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Learn how to code your own web site and host it on free services. Good for Khan Academy users and other beginners.">
+    <meta name="author" content="Robert Stone">
+
+    <title>Khan Academy Javascript Setup | Code Your Own Site</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
+            integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link rel="stylesheet" href="site.css"> 
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top navbar-dark bg-success">
+        <a href="/index.html" class="navbar-brand">&#x1f3e0;</a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/site_setup.html">Site Setup</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/kajs_setup.html">KA-JS Setup</a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/novice.html" role="button" aria-haspopup="true"
+                    aria-expanded="false">What Next?</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/novice.html">Novice</a>
+                    <a class="dropdown-item" href="/intermediate.html">Intermediate</a>
+                    <a class="dropdown-item" href="/advanced.html">Advanced</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/dm-frameworks.html">Desktop/Mobile Apps</a>
+                </div>
+            </li>
+            <li class="nav-item active">
+                <div class="nav-link" style="color: #8f8;">External Links:</div>
+            </li>
+
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                     aria-expanded="false">Tools</a>
+                <div class="dropdown-menu">
+                    <h6 class="dropdown-header">Code Playgrounds</h6>
+                    <a class="dropdown-item" href="https://glitch.com/">Glitch</a>
+                    <a class="dropdown-item" href="http://codepen.io/">CodePen</a>
+                    <a class="dropdown-item" href="https://jsfiddle.net/">JSFiddle</a>
+                    <a class="dropdown-item" href="https://c9.io/">Cloud9 (AWS)</a>
+                    <a class="dropdown-item" href="http://www.tutorialspoint.com/codingground.htm">Coding Ground</a>
+                    <a class="dropdown-item" href="http://jsbin.com/">JSBin</a>
+                    <a class="dropdown-item" href="http://sqlfiddle.com/">SQLFiddle</a>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Regex Playgrounds</h6>
+                    <a class="dropdown-item" href="https://regex101.com/">RegEx101</a>
+                    <a class="dropdown-item" href="http://regexr.com/">RegExr</a>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Color Schemers</h6>
+                    <a class="dropdown-item" href="http://paletton.com/">Paletton</a>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Documentation</h6>
+                    <a class="dropdown-item" href="http://devdocs.io/">devdocs.io</a>
+                    <a class="dropdown-item" href="https://zealdocs.org/">Zeal</a>
+                    <a class="dropdown-item" href="https://kapeli.com/dash">Dash</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Learning</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="http://www.khanacademy.org">Khan Academy</a>
+                    <a href="https://www.freecodecamp.com/" class="dropdown-item">FreeCodeCamp</a>
+                    <a href="http://www.sololearn.com/" class="dropdown-item">SoloLearn</a>
+                    <a href="http://www.tutorialspoint.com/" class="dropdown-item">tutorialspoint</a>
+                    <a href="https://www.codecademy.com/" class="dropdown-item">CodeAcademy</a>
+                    <a href="http://programmr.com/" class="dropdown-item">Programmr</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid pageheader">
+        <div class="container">
+            <h1 class="display-3">Khan Academy Javascript Setup</h1>
+            <p class="lead">Instructions for using Khan Academy's Processing.js on your own web site.</p>
+        </div>
+    </div>
+
+    <div class="container">
+    <h2 class="anchor" id="ka-processingjs">Running Processing.js Programs from Khan Academy on Your Site</h2>
+
+<p>This part is optional. It only applies if you have created your own programs using JavaScript+Processing.js on Khan Academy and want to embed them in your site's pages.</p>
+
+<h3>Khan Academy Processing.js Template</h3>
+
+<p>You can use your programs from Khan Academy on your own web site, but you will need to add a little extra code to them to make them work. The main thing you need is the <a href="https://www.khanacademy.org/computer-programming/processingjs-inside-webpages-template/5157014494511104">Processing.js Template</a> from the Khan Academy web site. Here is a stripped-down version of it with the important parts:</p>
+<pre class="code">
+&lt;body&gt;
+&lt;!--Place the canvas element where you want the canvas to appear --&gt;
+&lt;canvas id="mycanvas"&gt;&lt;/canvas&gt;
+
+&lt;!-- This causes the browser to load the Processing.js library --&gt;
+&lt;script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    var sketchProc = function(processingInstance) {
+        with (processingInstance) {
+            size(400, 400);
+            frameRate(30);
+
+            // YOUR CODE STARTS HERE
+
+            /***** Replace this line with your code from KA. *****/
+
+            // YOUR CODE ENDS HERE
+        }};
+    var canvas = document.getElementById("mycanvas");
+    var processingInstance = new Processing(canvas, sketchProc);
+&lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+<p>Just copy the needed parts of this snippet to your HTML file and replace the indicated comment line with your code.</p>
+
+<p>Put the <code>&lt;canvas&gt;</code> tag wherever you want the program's canvas to appear. There is an example program below so you can see what it will look like. If it helps any, you can also use the <strong>View Page Source</strong> function in your browser to view the HTML of this page to see how it is coded.</p>
+
+<div class="canvas">
+    <!--This draws the ProcessigJS Canvas on the web page -->
+    <canvas id="mycanvas"></canvas><br />This is <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-paint-splatter/5316498611372032">Paint Splatter</a> from Khan Academy.
+</div>
+
+<p>You can CSS style the <code>&lt;canvas&gt;</code> element to control things like the placement and margin of the canvas. If you want a different canvas size or frame rate, change the numbers in this part of the code:</p>
+<pre class="code">
+...
+with (processingInstance) {
+    size(400, 400);
+    frameRate(30);
+...
+</pre>
+
+<h3>Differences Between Khan Academy's Processing.js and the Standard Version</h3>
+
+<p>There are some differences between the Processing.js library used by Khan Academy and the standard one that you will be using on your own web pages.</p>
+
+<p><strong>The good news:</strong> You can now use some Processing.js functions and JavaScript features that don't work on Khan Academy! See the following documentation for all the cool stuff you can do now:</p>
+<ul>
+    <li><a href="http://processingjs.org/reference/">Processing.js Reference</a> for the full list of Processing.js functions.</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript Reference</a> (ECMAScript 5.1)</li>
+</ul>
+
+<p><strong>The bad news:</strong> You might need to make some minor code changes to get your code working outside of KA. Fortunately, this usually only means adding a line or two of code. <a href="https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support-">See here</a> for some differences between KA and the standard Processing.js library.</p>
+
+    </div>
+
+    <div class="container bottomnav">
+        
+    <a href="/site_setup.html">Back: Site Setup</a>
+    
+     &mdash; 
+    
+    <a href="/novice.html">Next: What to Do Next: Beginners</a>
+    
+    </div>
+    
+    <div class="container-fluid footer">
+        <p class="credits">Author: <a href="https://www.khanacademy.org/profile/KnowMoreStuff/">rjstone (KnowMoreStuff)</a>.</p>
+    </div>
+
+
+    <!-- Run all the JavaScript stuff -->
+    <!-- Include the processing.js library -->
+    <!-- See https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for differences -->
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js" integrity="sha384-IFMQ3jsa1T5/PsytPaLGxwQ6Z0c2fEjduoYZoD9BWJBFcdGpqX+tqdMYIDGS8yWY" crossorigin="anonymous"></script>
+    <script>
+        var sketchProc = function(processingInstance) {
+            with(processingInstance) {
+                size(600, 600);
+                frameRate(30);
+
+                // ProgramCodeGoesHere
+
+                noStroke();
+
+                var paintSplat = function() {
+                    var rb = random(0, 250);
+                    var gb = random(0, 250);
+                    var bb = random(0, 250);
+
+                    for (var i = 0; i < 500; i++) {
+                        var x = randomGaussian() * 71;
+                        var y = randomGaussian() * 120;
+                        var d = dist(0, 0, x, y);
+                        var s = pow((width / 1.4 - d) / 22, 1.50);
+                        var r = randomGaussian() * d / 15 + rb;
+                        var g = randomGaussian() * d / 15 + gb;
+                        var b = randomGaussian() * d / 15 + bb;
+                        var c = color(r, g, b, 180);
+
+                        fill(c);
+                        ellipse(x, y, s, s);
+                    }
+                };
+
+                //translate(width/2,height/2);
+                //paintSplat();
+
+                mouseClicked = function() {
+                    noStroke();
+
+                    pushMatrix();
+                    translate(mouseX, mouseY);
+                    scale(0.7, 0.7);
+                    rotate(randomGaussian() * 157);
+                    paintSplat();
+                    popMatrix();
+                };
+
+                fill(0, 0, 0);
+                textSize(50);
+                textAlign(CENTER, CENTER);
+                text("Click mouse here to splatter!", 0, 0, width, height);
+
+            }
+        };
+
+        // Get the canvas that Processing-js will use
+        var canvas = document.getElementById("mycanvas");
+        // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+        var processingInstance = new Processing(canvas, sketchProc);
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-4313173-7', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+</body>
+</html>
