@@ -109,5 +109,3 @@ prevtitle: "Home"
 <p>You can also learn more about how to access the web developer tools in your browser at <a href="https://www.wickedlysmart.com/hfjsconsole/">this web site</a> or <a href="http://webmasters.stackexchange.com/questions/8525/how-to-open-the-javascript-console-in-different-browsers">this one</a>.</p>
 
 <p>The code editors mentioned above also have syntax checking features that can warn you of some types of errors as soon as you type them. Read the manual for your code editor to find out more about these. You may need to download and install extension packages to get some of these features.</p>
-
-<p>And if you don't like Oh Noes! on Khan Academy and want to get rid of him, <a href="https://khanacademy.zendesk.com/hc/en-us/community/posts/218698787-Oh-Yes-A-UserScript-to-get-rid-of-Oh-Noes-the-Error-Buddy">see here for instructions</a> on how to do that.</p>
