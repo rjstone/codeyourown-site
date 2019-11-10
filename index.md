@@ -37,3 +37,12 @@ layout: default
 <div class="alert alert-info" role="alert"><strong>Disclaimer:</strong> A number of products and services are mentioned in this guide, though almost all of them are free. The author does not endorse, nor is he affiliated with, any of these products or services. Please do your own research and verification before providing things like personal information or spending any money. The author does not get paid by Khan Academy or any of these services and this is not an official Khan Academy site.</div>
 
 
+<h2>Safety Tips</h2>
+
+<p>First of all, if you're 13 or younger then make sure to ask your parents for some advice as to what you should or shouldn't put on your web site. This is one of the things that parents are for.</p>
+
+<p>In general, avoid putting any sort of contact information on your web site. If you put your email address on your web site then you're guaranteed to get more spam, at the very least, and you will also likely get people sending you emails trying to scam you into sending them money or whatever. It should be obvious but never put your phone number or address on your web site! That is a really bad idea.</p>
+
+<p>You probably also don't want to put any social media account links on your web site either. This also causes spam and you may get strange people sending you friend requests. It's pretty much the same thing as putting your email address on your web site; you get spam, scams, and similar when you do this. So just avoid any sort of contact information.</p>
+
+<p>Also I'd strongly recommend following the advice from <a href="https://www.mcgruff-safe-kids.com/2014/08/10-internet-safety-tips-for-kids/">McGruff Safety Tips for Kids</a>. Most of that is good advice for adults too.</p>
